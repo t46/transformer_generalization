@@ -148,6 +148,27 @@
             "name": "Debug File",
             "program": "${file}",
             "cwd": "${fileDirname}"
+        },
+
+        {   
+            "name": "transformer_generalization",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "python": "/root/miniconda3/envs/transformer_genralization/bin/python",
+            "cwd": "${fileDirname}"
+        },
+
+        {   
+            "name": "run_cfq_mcd_small_batch_universal",
+            "type": "python",
+            "request": "launch",
+            "program": "./run.py",
+            "python": "/root/miniconda3/envs/transformer_genralization/bin/python",
+            "cwd": "${fileDirname}",
+            "args": [
+                "sweeps/cfq_mcd_small_batch_universal.yaml"
+            ]
         }
     ]
 }
